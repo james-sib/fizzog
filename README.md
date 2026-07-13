@@ -7,3 +7,7 @@ Realistic AI faces for **Football Manager** (FM24 & FM26) — matched to each pl
 The **Releases** on this repo are the official installers (a public backup mirror of the downloads on fizzogfm.com). Free to install; buy credits inside the app.
 
 Not affiliated with Sports Interactive or SEGA.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for the per-rollout history.

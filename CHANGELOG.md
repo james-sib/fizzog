@@ -8,6 +8,31 @@ Verify any download against the SHA-256 below with `Get-FileHash file.exe` in Po
 
 ---
 
+## 2026-08-09 — FIZZOG 24 v1.0.15 · FIZZOG 26 v1.0.29
+
+**A friendlier first run.** New users were being shown a balance, a price on every
+model, a price on the Generate button and a Buy button before they had made a single
+face — which made a gift look like a paywall. Until the free faces are used up the app
+now simply says how many are left ("3 free faces left"), drops the prices from the model
+list and the Generate button, and hides the Buy button entirely. Pick a dearer model and
+the count updates honestly. Once you top up, the normal credit display returns for good.
+The welcome screen says "Your first three faces are on us. No card, no sign-up." instead
+of counting credits. Nothing about billing changed — same wallet, same free credits, same
+prices — only what a first-time user is shown. Translated into all 29 languages.
+
+**Anonymous install ping.** The installer now sends one ping when it finishes, carrying
+the game and version only — no name, no machine id, nothing identifying. It exists to
+close a blind spot: we could already count downloads and app launches, but not installs,
+so we could not tell "Windows or antivirus blocked the file" apart from "it installed and
+then failed to run". It uses a short-timeout web request that is swallowed on any error,
+so it can never delay or fail an install (verified: ~4s worst case with no network).
+
+**SHA-256**
+- `FIZZOG-24-Setup-v1.0.15-build2026.08.09.exe` — `4384ed9cfa63b37aea801a3640b389eff1a65bd570074400cf3f907da2942fbf`
+- `FIZZOG-26-Setup-v1.0.29-build2026.08.09.exe` — `226cd2a93bc227e71a4a1eb7f9f5b4ba569f60faee8850ed2018bbbe085de311`
+
+---
+
 ## 2026-07-13 — FIZZOG 24 v1.0.14 · FIZZOG 26 v1.0.28
 
 **New — Cut-out (no background).** A new option that generates a transparent,
